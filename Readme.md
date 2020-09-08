@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Анатолий  Дегтярь](https://up.htmlacademy.ru/htmlcss/29/user/792499).
-* Наставник: `[Маргарита Попова](https://htmlacademy.ru/profile/lipsum)`.
+* Наставник: [Маргарита Попова](https://htmlacademy.ru/profile/lipsum).
 
 ---
 

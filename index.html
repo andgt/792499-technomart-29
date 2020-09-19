@@ -18,9 +18,9 @@
           <img src="https://via.placeholder.com/150x100" width="" height="" alt="">
         </a>
     		<input class="search" type="search" name="search" value="" placeholder="Поиск:">
-    		<a class="bookmarks" href="">Закладки: 0</a>
-    		<a class="basket" href="">Корзина: 0</a>
-    		<button class="order-registration" type="button">Оформить заказ</button>
+    		<a class="top-menu bookmarks" href="">Закладки: 0</a>
+    		<a class="top-menu basket" href="">Корзина: 0</a>
+    		<button class="top-menu order-registration" type="button">Оформить заказ</button>
 
       </div>
 
@@ -89,27 +89,29 @@
   		<!--Слайдер из двух элементов (перфораторы и дрели)-->
 
   			<div class="slider">
-          <div class="slider-text-wrapper">
-    				<h3 class="slider-title">Перфораторы</h3>
-    				<p class="slider-description">Настоящие мужские игрушки</p>
-          </div>
-  				<a class="btn slider-btn" href="">Открыть каталог</a>	
-  				<img class="slider-img" src="https://via.placeholder.com/150x100" width="" height="" alt="">
-  			</div>
+          <div class="slider-item">
+            <div class="slider-text-wrapper">
+      				<h3 class="slider-title">Перфораторы</h3>
+      				<p class="slider-description">Настоящие мужские игрушки</p>
+            </div>
+    				<a class="btn slider-btn" href="">Открыть каталог</a>	
+    				<img class="slider-img" src="https://via.placeholder.com/150x100" width="" height="" alt="">
+  			  </div>
+        </div>
 
   		<section class="popular-product">
   			
-        <div class="popular-product-header">
+        <div class="popular popular-product-header">
   			
         <h2 class="popular-product-title">Популярные товары:</h2>
-  			<a class="popular-product-btn" href="">Все популярные товары</a>
+  			<a class="btn popular-product-btn" href="">Все популярные товары</a>
   			
         </div>
 
   			<ul class="popular-product-catalog">
 
   				<li class="popular-product-card">
-            <div class="product-wrapper">
+            <div class="product">
     					<a class="product-image-wrapper" href="">
   	  					<img class="product-image" src="https://via.placeholder.com/150x100" width="" height="" alt="">
               </a>
@@ -175,10 +177,10 @@
 
   		</section>
 
-  		<section class="popular-brands">
-  			<div class="popular-brands-header">
+  		<section class="brands">
+  			<div class="popular popular-brands-header">
     			<h2 class="popular-brands-title">Популярные производители:</h2>
-    			<a class="popular-brands-btn" href="">Все производители</a>
+    			<a class="btn popular-brands-btn" href="">Все производители</a>
         </div>
 
   			<ul class="popular-brands-list">
@@ -258,7 +260,7 @@
   			</ul>
 
   				<div class="service-block">
-            <article class="service-block-delivery"> 
+            <article class="service-block-item service-block-delivery"> 
     					<h3 class="service-block-title">Доставка</h3>
     					<p class="service-block-description">Мы с удовольствием доставим ваш товар прямо<br> 
     						к вашему подъезду совершенно бесплатно!<br> 
@@ -278,7 +280,7 @@
   				Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
   			</p>
 
-			  <p class="about-company-delivery">
+			  <p class="about-company-description">
   				Мы можем доставить ваш товар в самые отдаленные точки России!
   				Техномарт работает со многими транспортными компаниями:
 			  </p>
@@ -299,8 +301,9 @@
 
   		<p class="contacts-address">
         Вы можете забрать товар сами, заехав в наш офис:
-        <img class="contacts-map" src="https://via.placeholder.com/150x100" width="" height="" alt="">
       </p>
+
+      <img class="contacts-map" src="https://via.placeholder.com/150x100" width="" height="" alt="">
 
   	 	<a class="btn contacts-btn" href="">Заблудились? Напишите нам!</a>
 
@@ -317,26 +320,26 @@
 
         <address class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8  +7 (812) 555-05-55</address>
 
-	  		<ul class="footer-navigation-site">
+	  		<ul class="footer-navigation-site-item">
 
-	  			<li class="navigation-site-item">
-	  				<a class="footer-nav-site-link" href="">Компания</a>
+	  			<li class="footer-navigation-item">
+	  				<a class="footer-navigation-link footer-navigation-site-item" href="">Компания</a>
 	  			</li>
 
-	  			<li class="navigation-site-item">
-	  				<a class="footer-nav-site-link" href="">Новости</a>
+	  			<li class="footer-navigation-item">
+	  				<a class="footer-navigation-link footer-navigation-site-item" href="">Новости</a>
 	  			</li>
 
-	  			<li class="navigation-site-item">
-	  				<a class="footer-nav-site-link" href="">Каталог</a>
+	  			<li class="footer-navigation-item">
+	  				<a class="footer-navigation-link footer-navigation-site-item" href="">Каталог</a>
 	  			</li>
 
-	  			<li class="navigation-site-item">
-	  				<a class="footer-nav-site-link" href="">Доставка</a>
+	  			<li class="footer-navigation-item">
+	  				<a class="footer-navigation-link footer-navigation-site-item" href="">Доставка</a>
 	  			</li>
 
-	  			<li class="navigation-site-item">
-	  				<a class="footer-nav-site-link" href="">Контакты</a>
+	  			<li class="footer-navigation-item">
+	  				<a class="footer-navigation-link footer-navigation-site-item" href="">Контакты</a>
 	  			</li>
 
 	  		</ul>
@@ -344,19 +347,19 @@
 	  		<ul class="footer-navigation-products">
 	  			
 	  			<li class="navigation-products-item">
-	  				<a class="footer-nav-products" href="">Материалы</a>
+	  				<a class="footer-navigation-link footer-navigation-products-item" href="">Материалы</a>
 	  			</li>
 
 	  			<li class="navigation-products-item">
-	  				<a class="footer-nav-products" href="">Техника</a>
+	  				<a class="footer-navigation-link footer-navigation-products-item" href="">Техника</a>
 	  			</li>
 
 	  			<li class="navigation-products-item">
-	  				<a class="footer-nav-products" href="">Инструмент</a>
+	  				<a class="footer-navigation-link footer-navigation-products-item" href="">Инструмент</a>
 	  			</li>
 
 	  			<li class="navigation-products-item">
-	  				<a class="footer-nav-products" href="">Спецпредложения</a>
+	  				<a class="footer-navigation-link footer-navigation-products-item" href="">Спецпредложения</a>
 	  			</li>
 
 	  		</ul>
@@ -370,30 +373,32 @@
     			Все права защищены
     		</p>
 
-    		<ul class="social-list">
-    			
-    			<li class="social-list-item">
-            <a class="social-btn" href="">Вконтакте</a>
-          </li>
-    			<li class="social-list-item">
-            <a class="social-btn" href="">Фейсбук</a>
-          </li> 
-    			<li class="social-list-item">
-            <a class="social-btn" href="">Инстаграм</a>
-          </li>
+        <section class="social">
+      		<ul class="social-list">
+      			
+      			<li class="social-item">
+              <a class="social-btn" href="">Вконтакте</a>
+            </li>
+      			<li class="social-item">
+              <a class="social-btn" href="">Фейсбук</a>
+            </li> 
+      			<li class="social-item">
+              <a class="social-btn" href="">Инстаграм</a>
+            </li>
 
-    		</ul>
+      		</ul>
+        </section>
+        <div class="feed">
+      		<p class="feed-text">
+      			Обратная связь:
+      			<a class="feed-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      		</p>
 
-    		<p class="feed feedback">
-    			Обратная связь:
-    			<a class="feedback-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-    		</p>
-
-    		<p class="feed developed">
-    			Разработано —
-    			<a class="developed-link" href="">htmlacademy.ru</a>
-    		</p>
-
+      		<p class="feed-text">
+      			Разработано —
+      			<a class="feed-link" href="">htmlacademy.ru</a>
+      		</p>
+        </div>
   		</div>
   		
   	</footer>

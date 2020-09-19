@@ -44,6 +44,14 @@ a {
 	text-decoration: none;
 }
 
+.btn {
+	color: var(--white);
+	background-color: var(--basic-red);
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
 .page-header {
 	background-color: var(--main-header);
 }
@@ -61,9 +69,8 @@ a {
 
 .search::placeholder {
 	color: var(--white);
-	opacity: 1; 
 	font-size: 18px; 
-	opacity: 1; 
+	opacity: 1;
 } 
 
 .search:focus {
@@ -74,37 +81,17 @@ a {
 	color: var(--black);
 }
 
-.bookmarks {
+.top-menu {
 	color: var(--white);
 	font-size: 18px;
 }
 
-.bookmarks:active {
-	color: var(--white-active);
-}
-
-.search {
-	color: var(--white);
-	font-size: 18px;
-}
-
-.basket {
-	color: var(--white);
-	font-size: 18px;
-}
-
-.basket:active {
+.top-menu:active {
 	color: var(--white-active);
 }
 
 .order-registration {
-	color: var(--white);
 	background-color: var(--basic-green);
-	font-size: 18px;
-}
-
-.order-registration:active {
-	color: var(--white-active);
 }
 
 .header-description {
@@ -166,11 +153,8 @@ a {
 }
 
 .feauters-btn {
-	color: var(--white);
 	background-color: var(--white-opacity);
-	mix-blend-mode: normal;
-	font-size: 14px;
-	line-height: 18px;	
+	mix-blend-mode: normal;	
 }
 
 .feauters-btn:hover {
@@ -228,11 +212,7 @@ a {
 }
 
 .slider-btn {
-	color: var(--white);
 	background-color: var(--basic-red);
-	font-size: 14px;
-	line-height: 18px;
-	text-transform: uppercase;
 }
 
 .slider-btn:hover {
@@ -243,7 +223,7 @@ a {
 	background-color: var(--error);
 }
 
-.popular-product-header {
+.popular {
 	background-color: var(--wrapper-title-btn);
 	text-transform: uppercase;
 }
@@ -254,31 +234,10 @@ a {
 	line-height: 30px;
 }
 
-.popular-product-btn {
-	color: var(--white);
-	background-color: var(--basic-red);
-	background-color: 
-	font-size: 14px;
-	line-height: 18px;
-}
-
-.popular-brands-header {
-	background-color: var(--wrapper-title-btn);
-	text-transform: uppercase;
-}
-
 .popular-brands-title {
 	color: var(--background-navy-blue);
 	font-size: 30px;
 	line-height: 30px;
-}
-
-.popular-brands-btn {
-	color: var(--white);
-	background-color: var(--basic-red);
-	background-color: 
-	font-size: 14px;
-	line-height: 18px;
 }
 
 .product-title-link {
@@ -370,23 +329,9 @@ a {
 	font-size: 13px;
 }
 
-.about-company-delivery {
-	color: var(--black);
-	font-family: "PT Sans", "Arial", sans-serif;
-	font-size: 13px;
-}
-
 .about-company-list-item {
 	color: var(--black);
 	font-size: 18px;
-}
-
-.about-company-btn {
-	color: var(--white);
-	background-color: var(--basic-red);
-	font-size: 14px;
-	line-height: 18px;
-	text-transform: uppercase;
 }
 
 .contacts-title {
@@ -402,12 +347,8 @@ a {
 	font-size: 13px;
 }
 
-.contacts-btn {
-	color: var(--white);
-	background-color: var(--basic-red);
-	font-size: 14px;
-	line-height: 18px;
-	text-transform: uppercase;
+.footer-navigation {
+	background-color: var(--background-navy-blue);
 }
 
 .footer-address {
@@ -416,18 +357,16 @@ a {
 	font-style: normal;
 }
 
-.footer-nav-site-link {
+.footer-navigation-link {
+	font-size: 18px;
+}
+
+.footer-navigation-site-item {
 	color: var(--white);
-	font-size: 18px;
 }
 
-.footer-nav-products {
+.footer-navigation-products-item {
 	color: var(--special-yellowlight);
-	font-size: 18px;
-}
-
-.footer-navigation {
-	background-color: var(--background-navy-blue);
 }
 
 .footer-social {
@@ -449,18 +388,10 @@ a {
 	line-height: 18px;
 }
 
-.feedback {
+.feed-text {
 	color: var(--white);
 }
 
-.developed {
-	color: var(--white);
-}
-
-.feedback-link {
-	color: var(--special-yellowlight);
-}
-
-.developed-link {
+.feed-link {
 	color: var(--special-yellowlight);
 }

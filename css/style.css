@@ -25,16 +25,29 @@
 	--grey-opacity: rgba(169, 169, 169, 0.3);
 	--white-active: rgba(255, 255, 255, 0.5);
 	--white-opacity: rgba(255, 255, 255, 0.3);
+	--red-shadow-logo: rgba(0, 0, 0, 0.24);
 	--basic-greylight-opacity: rgba(197, 197, 197, 0.3);
 	--dark-red: #ca2c37;
 
+}
+
+*, *::before, ::after {
+	box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .page-body {
 	min-width: 960px;
 	margin: 0;
 	padding: 0;
-	color: var(--white);
+	color: var(--black);
 	font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
 	font-weight: normal;
 	line-height: 24px;
@@ -152,42 +165,41 @@ a {
 	line-height: 30px;
 }
 
-.feauters-btn {
+.features-btn {
 	background-color: var(--white-opacity);
-	mix-blend-mode: normal;	
 }
 
-.feauters-btn:hover {
+.features-btn:hover {
 	background-color: var(--basic-greylight-opacity);
 	mix-blend-mode: normal;
 }
 
-.feauters-btn:active {
+.features-btn:active {
 	background-color: var(--grey-opacity);
 	mix-blend-mode: normal;
 }
 
-.feauters-item-materials {
+.features-item-materials {
 	background-color: var(--special-yellow);
 }
 
-.feauters-item-tools {
+.features-item-tools {
 	background-color: var(--special-blue);
 }
 
-.feauters-item-technic {
+.features-item-technic {
 	background-color: var(--special-lilac);
 }
 
-.feauters-item-discounts {
+.features-item-discounts {
 	background-color: var(--special-greenlight);
 }
 
-.feauters-item-delivery {
+.features-item-delivery {
 	background-color: var(--delivery-section);
 }
 
-.feauters-title {
+.features-title {
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 30px;
@@ -228,13 +240,7 @@ a {
 	text-transform: uppercase;
 }
 
-.popular-product-title {
-	color: var(--background-navy-blue);
-	font-size: 30px;
-	line-height: 30px;
-}
-
-.popular-brands-title {
+.main-section-title {
 	color: var(--background-navy-blue);
 	font-size: 30px;
 	line-height: 30px;
@@ -276,7 +282,7 @@ a {
 	text-transform: uppercase;
 }
 
-.services-description {
+.services-text {
 	color: var(--black);
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
@@ -341,13 +347,13 @@ a {
 	text-transform: uppercase;
 }
 
-.contacts-address {
+.contacts-text {
 	color: var(--black);
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 }
 
-.footer-navigation {
+.page-footer-top {
 	background-color: var(--background-navy-blue);
 }
 
@@ -361,15 +367,15 @@ a {
 	font-size: 18px;
 }
 
-.footer-navigation-site-item {
+.footer-navigation-link {
 	color: var(--white);
 }
 
-.footer-navigation-products-item {
+.footer-navigation-product .footer-navigation-link {
 	color: var(--special-yellowlight);
 }
 
-.footer-social {
+.page-footer-bottom {
 	background-color: var(--background-dark-blue);
 }
 	

@@ -28,6 +28,9 @@
 	--red-shadow-logo: rgba(0, 0, 0, 0.24);
 	--basic-greylight-opacity: rgba(197, 197, 197, 0.3);
 	--dark-red: #ca2c37;
+	--font-color: #000000;
+	--azure: #f2f6f8;
+	--light-yellow: #f7f3ec;
 
 }
 
@@ -47,7 +50,7 @@
 	min-width: 960px;
 	margin: 0;
 	padding: 0;
-	color: var(--black);
+	color: var(--font-color);
 	font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
 	font-weight: normal;
 	line-height: 24px;
@@ -63,6 +66,12 @@ a {
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
+}
+
+.list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 .page-header {
@@ -94,7 +103,7 @@ a {
 	color: var(--black);
 }
 
-.top-menu {
+.top-menu-btn {
 	color: var(--white);
 	font-size: 18px;
 }
@@ -107,7 +116,7 @@ a {
 	background-color: var(--basic-green);
 }
 
-.header-description {
+.header-text {
 	color: var(--basic-red);
 	font-style: italic;
 	font-size: 16px;
@@ -400,4 +409,80 @@ a {
 
 .feed-link {
 	color: var(--special-yellowlight);
+}
+
+
+/* Каталог */
+
+.catalog-basket {
+	background-color: var(--basic-red);
+}
+
+.username {
+	color: var(--black);
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.login-menu {
+	color: var(--background-navy-blue);
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.breadcrumbs-page {
+	color: var(--black);
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.catalog-title {
+	color: var(--background-navy-blue);
+	background-color: #f2f6f8;
+	font-size: 30px;
+	font-weight: inherit;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.block-filter {
+	font-family: "PT Sans", "Arial", sans-serif;
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.block-filter-title {
+	background-color: var(--light-yellow);
+}
+
+.filter-subtitle {
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.filter-control {
+	background-color: var(--light-yellow);
+}
+
+.filter-item {
+	font-size: 15px;
+	line-height: 19px;
+}
+
+.filter-btn {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.sort-detailed {
+	opacity: 0.3;
+	border-bottom: 1px dotted var(--basic-red);
+}
+
+.sort-price {
+	color: var(--basic-red);
 }

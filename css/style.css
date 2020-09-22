@@ -31,6 +31,7 @@
 	--font-color: #000000;
 	--azure: #f2f6f8;
 	--light-yellow: #f7f3ec;
+	--greyscale: #d7dcde;
 
 }
 
@@ -486,3 +487,14 @@ a {
 .sort-price {
 	color: var(--basic-red);
 }
+
+.sort-btn {
+	background-color: var(--basic-greylight);
+}
+
+.pagination a {
+	color: var(--black);
+	font-size: 13px;
+	line-height: 18px;
+}
+

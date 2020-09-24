@@ -36,8 +36,8 @@
 
   		</p>
 
-  		<a class="phone-number" href="tel:+78125550555">+7 (812) 555-05-55</a>
-  		<p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+  		<a class="page-header-phone-number" href="tel:+78125550555">+7 (812) 555-05-55</a>
+  		<p class="page-header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 
   		<div class="header-authorization">
 	  		<a class="username" href="">Равшан Джамшутович</a>
@@ -46,7 +46,7 @@
 	  	</div>
 
   		<nav class="main-navigation">
-  			<ul class="list main-navigation-list">
+  			<ul class="main-navigation-list">
   				<li class="main-navigation-item"><a class="main-navigation-link" href="">Главная</a></li>
   				<li class="main-navigation-item"><a class="main-navigation-link" href="">Компания</a></li>
   				<li class="main-navigation-item"><a class="main-navigation-link" href="catalog.html">Каталог</a></li>
@@ -61,12 +61,12 @@
 
   	<main class="page-main">
   		
-  		<ul class="list breadcrumbs">
+  		<ul class="breadcrumbs">
   			
-  			<li><a class="breadcrumbs-icon" href="">Главная</a></li>
-  			<li><a class="breadcrumbs-page" href="">Каталог</a></li>
-  			<li><a class="breadcrumbs-page" href="">Инструмент</a></li>
-  			<li class="breadcrumbs-page">Перфораторы</li>
+  			<li><a href="index.html">Главная</a></li>
+  			<li><a href="catalog.html">Каталог</a></li>
+  			<li><a href="">Инструмент</a></li>
+  			<li>Перфораторы</li>
 
   		</ul>
 
@@ -74,71 +74,55 @@
 
   		<section class="main-content">
 
-  			<section class="block-filter filter"><!--Блок для фильтра-->
+  			<section class="block-filter"><!--Блок для фильтра-->
 
-	  			<h2 class="block-filter-title filter-title">Фильтр:</h2>
+	  			<h2 class="block-filter-title">Фильтр:</h2>
 
-	  			<div class="filter-price">	
+	  			<div class="block-filter-price">	
 	  			
-		  			<h3 class="filter-subtitle">Цена</h3>
+		  			<h3 class="block-filter-subtitle">Цена</h3>
 
-		  			<div class="filter-control filter-price-control"><!--Блок для ползунков стоимости-->
-
-              <div class="filter-scale"></div>
-              <div class="filter-toggle min-toggle"></div>
-              <div class="filter-toggle max-toggle"></div>
-
-		  			</div>
-		  			
-		  			<div class="filter-price-value">
-
-	          	<input class="filter-control min-price" type="text" value="0">
-	          	<span>—</span>
-	          	<input class="filter-control max-price" type="text" value="30000">
-	              
-	          </div>
+		  			<div></div><!--Блок для ползунков стоимости-->
 	  			
 	  			</div>
 	  			
-	  			<div class="filter-brands">
+	  			<div class="block-filter-brands">
 
-	  				<h3 class="filter-subtitle">Производители:</h3>
-	  				<p class="filter-item filter-brands-bosch">Bosch</p>
-	  				<p class="filter-item filter-brands-interskol">Интерскол</p>
-	  				<p class="filter-item filter-brands-makita">Makita</p>
-	  				<p class="filter-item filter-brands-dewalt">Dewalt</p>
-	  				<p class="filter-item filter-brands-hitachi">Hitachi</p>
+	  				<h3 class="block-filter-subtitle">Производители:</h3>
+	  				<p class="block-filter-item">Bosch</p>
+	  				<p class="block-filter-item">Интерскол</p>
+	  				<p class="block-filter-item">Makita</p>
+	  				<p class="block-filter-item">Dewalt</p>
+	  				<p class="block-filter-item">Hitachi</p>
 
 	  			</div>	
 
-	  			<div>
+	  			<div class="block-filter-power">
 
-	  				<h3 class="filter-subtitle">Питание:</h3>
-	  				<p class="filter-item filter-supply">Аккумуляторные</p>
-	  				<p class="filter-item filter-supply">Сетевые</p>
+	  				<h3 class="block-filter-subtitle">Питание:</h3>
+	  				<p class="block-filter-item">Аккумуляторные</p>
+	  				<p class="block-filter-item">Сетевые</p>
 
 	  			</div>
 	  			
-	  			<button class="filter-btn" type="submit">Показать</button>
+	  			<button class="block-filter-btn block-filter-btn-show" type="submit">Показать</button>
 
   			</section>
   			
-  			<section class="block-filter sort"><!--Блок для сортировки-->
+  			<section class="block-filter block-filter-sort"><!--Блок для сортировки-->
 
-  				<h2 class="block-filter-title sort-title">Сортировка:</h2>
-  				<a class="sort-price" href="">По цене</a>
-  				<a class="sort-detailed" href="">По типу</a>
-  				<a class="sort-detailed" href="">По функционалу</a>
-
-  				<!--Разметка для треугольников-кнопок-->
-  				<button class="sort-btn" type="button"></button>
-  				<button class="sort-btn" type="button"></button>
+  				<h2 class="block-filter-title">Сортировка:</h2>
+  				<button class="block-filter-btn block-filter-btn-sort" type="button">По цене</button>
+  				<button class="block-filter-btn block-filter-btn-sort" type="button">По типу</button>
+  				<button class="block-filter-btn block-filter-btn-sort" type="button">По функционалу</button>
+  				<button class="block-filter-btn-triangle" type="button"></button>
+  				<button class="block-filter-btn-triangle" type="button"></button>
 
   			</section>
 
   			<section class="catalog"><!--Блок для карточек товара-->
   			
-  				<ul class="list catalog-section-list">
+  				<ul class="catalog-section-list">
 
 	  				<li class="catalog-section-item">
 	  					<div class="product">
@@ -284,7 +268,7 @@
 
   				</ul>
 
-  				<ul class="list pagination">
+  				<ul class="pagination">
   					<li>
   						<a href="catalog.html">1</a>
   					</li>	
@@ -310,48 +294,48 @@
 	          <img class="logo-image" src="https://via.placeholder.com/150x100" width="" height="" alt="">
 	        </a>
 
-	        <address class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</address>
+	        <address class="page-footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</address>
 
-		  		<ul class="list footer-navigation-site">
+		  		<ul class="page-footer-navigation-site">
 
-		  			<li class="footer-navigation-item footer-navigation-main">
-		  				<a class="footer-navigation-link" href="">Компания</a>
+		  			<li class="page-footer-navigation-item page-footer-navigation-main">
+		  				<a class="page-footer-navigation-link" href="">Компания</a>
 		  			</li>
 
-		  			<li class="footer-navigation-item">
-		  				<a class="footer-navigation-link" href="">Новости</a>
+		  			<li class="page-footer-navigation-item"page->
+		  				<a class="page-footer-navigation-link" href="">Новости</a>
 		  			</li>
 
-		  			<li class="footer-navigation-item">
-		  				<a class="footer-navigation-link" href="">Каталог</a>
+		  			<li class="page-footer-navigation-item"page->
+		  				<a class="page-footer-navigation-link" href="">Каталог</a>
 		  			</li>
 
-		  			<li class="footer-navigation-item">
-		  				<a class="footer-navigation-link" href="">Доставка</a>
+		  			<li class="page-footer-navigation-item"page->
+		  				<a class="page-footer-navigation-link" href="">Доставка</a>
 		  			</li>
 
-		  			<li class="footer-navigation-item">
-		  				<a class="footer-navigation-link" href="">Контакты</a>
+		  			<li class="page-footer-navigation-item"page->
+		  				<a class="page-footer-navigation-link" href="">Контакты</a>
 		  			</li>
 
 		  		</ul>
 
-		  		<ul class="list footer-navigation-site footer-navigation-product">
+		  		<ul class="page-footer-navigation-site page-footer-navigation-product">
 		  			
-		  			<li class="footer-navigation-item">
-		  				<a class="footer-navigation-link" href="">Материалы</a>
+		  			<li class="page-footer-navigation-item"page->
+		  				<a class="page-footer-navigation-link" href="">Материалы</a>
 		  			</li>
 
-		  			<li class="footer-navigation-item">
-		  				<a class="footer-navigation-link" href="">Техника</a>
+		  			<li class="page-footer-navigation-item"page->
+		  				<a class="page-footer-navigation-link" href="">Техника</a>
 		  			</li>
 
-		  			<li class="footer-navigation-item">
-		  				<a class="footer-navigation-link" href="">Инструмент</a>
+		  			<li class="page-footer-navigation-item"page->
+		  				<a class="page-footer-navigation-link" href="">Инструмент</a>
 		  			</li>
 
-		  			<li class="footer-navigation-item">
-		  				<a class="footer-navigation-link" href="">Спецпредложения</a>
+		  			<li class="page-footer-navigation-item"page->
+		  				<a class="page-footer-navigation-link" href="">Спецпредложения</a>
 		  			</li>
 
 		  		</ul>
@@ -360,37 +344,37 @@
 
 	  		<div class="page-footer-bottom">
 	  		
-	    		<p class="copyright">
+	    		<p class="page-footer-copyright">
 	    			&copy; 2010-2019 Компания "Техномарт"
 	    			Все права защищены
 	    		</p>
 
-	        <section class="social">
+	        <section class="page-footer-social">
 	          <h2 class="visually-hidden">Ссылки на социальные сети</h2>
-	      		<ul class="list social-list">
+	      		<ul class="page-footer-social-list">
 	      			
-	      			<li class="social-item">
-	              <a class="social-btn" href="">Вконтакте</a>
+	      			<li class="page-footer-social-item">
+	              <a class="page-footer-social-btn" href="">Вконтакте</a>
 	            </li>
-	      			<li class="social-item">
-	              <a class="social-btn" href="">Фейсбук</a>
+	      			<li class="page-footer-social-item">
+	              <a class="page-footer-social-btn" href="">Фейсбук</a>
 	            </li> 
-	      			<li class="social-item">
-	              <a class="social-btn" href="">Инстаграм</a>
+	      			<li class="page-footer-social-item">
+	              <a class="page-footer-social-btn" href="">Инстаграм</a>
 	            </li>
 
 	      		</ul>
 	        </section>
 
-	        <div class="feed">
-	      		<p class="feed-text">
+	        <div class="page-footer-bottom-feed">
+	      		<p class="page-footer-feed-text">
 	      			Обратная связь:
-	      			<a class="feed-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+	      			<a class="page-footer-feed-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 	      		</p>
 
-	      		<p class="feed-text">
+	      		<p class="page-footer-feed-text">
 	      			Разработано —
-	      			<a class="feed-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+	      			<a class="page-footer-feed-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
 	      		</p>
 	        </div>
 	  		</div>

@@ -20,7 +20,7 @@
 	--background-navy-blue: #32425c;
 	--delivery-section: #ffc047;
 	--wrapper-slider-text: rgba(0, 0, 0, 0.25);
-	--wrapper-title-btn: #f9f5f0;
+	--pale-yellow: #f9f5f0;
 	--grey: #a9a9a9;
 	--grey-opacity: rgba(169, 169, 169, 0.3);
 	--white-active: rgba(255, 255, 255, 0.5);
@@ -32,6 +32,7 @@
 	--azure: #f2f6f8;
 	--light-yellow: #f7f3ec;
 	--greyscale: #d7dcde;
+	--transparent: #00000000;
 
 }
 
@@ -55,6 +56,17 @@
 	font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
 	font-weight: normal;
 	line-height: 24px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.page-body ul {
+	list-style-type: none;	
+}
+
+.page-body button {
+	cursor: pointer;
 }
 
 a {
@@ -67,12 +79,6 @@ a {
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
-}
-
-.list {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
 }
 
 .page-header {
@@ -124,14 +130,14 @@ a {
 	line-height: 23px;
 }
 
-.phone-number {
+.page-header-phone-number {
 	color: var(--basic-red);
 	font-weight: 700;
 	font-size: 21px;
 	line-height: 30px;
 }
 
-.address {
+.page-header-address {
 	color: var(--background-navy-blue);
 	font-size: 14px;
 }
@@ -245,8 +251,8 @@ a {
 	background-color: var(--error);
 }
 
-.popular {
-	background-color: var(--wrapper-title-btn);
+.main-section-header {
+	background-color: var(--pale-yellow);
 	text-transform: uppercase;
 }
 
@@ -326,7 +332,7 @@ a {
 	text-transform: uppercase;
 }
 
-.service-block-description {
+.service-block-text {
 	color: var(--black);
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
@@ -339,7 +345,7 @@ a {
 	text-transform: uppercase;
 }
 
-.about-company-description {
+.about-company-text {
 	color: var(--black);
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
@@ -367,21 +373,18 @@ a {
 	background-color: var(--background-navy-blue);
 }
 
-.footer-address {
+.page-footer-address {
 	color: var(--white);
 	font-size: 18px;
 	font-style: normal;
 }
 
-.footer-navigation-link {
+.page-footer-navigation-link {
+	color: var(--white);
 	font-size: 18px;
 }
 
-.footer-navigation-link {
-	color: var(--white);
-}
-
-.footer-navigation-product .footer-navigation-link {
+.page-footer-navigation-product .page-footer-navigation-link {
 	color: var(--special-yellowlight);
 }
 
@@ -389,26 +392,26 @@ a {
 	background-color: var(--background-dark-blue);
 }
 	
-.copyright {
+.page-footer-copyright {
 	color: var(--white);
 	font-size: 16px;
 	line-height: 18px;
 }
 
-.social-btn {
+.page-footer-social-btn {
 	color: var(--white); /* На время отсутсвия картинок добавил белый цвет надписям */
 }
 
-.feed {
+.page-footer-bottom-feed {
 	font-size: 16px;
 	line-height: 18px;
 }
 
-.feed-text {
+.page-footer-feed-text {
 	color: var(--white);
 }
 
-.feed-link {
+.page-footer-feed-link {
 	color: var(--special-yellowlight);
 }
 
@@ -431,10 +434,13 @@ a {
 	line-height: 18px;
 }
 
-.breadcrumbs-page {
-	color: var(--black);
+.breadcrumbs li {
 	font-size: 13px;
 	line-height: 18px;
+}
+
+.breadcrumbs a {
+	color: var(--black);
 }
 
 .catalog-title {
@@ -453,48 +459,53 @@ a {
 	line-height: 18px;
 }
 
+.block-filter-sort {
+	background-color: var(--light-yellow);
+}
+
 .block-filter-title {
 	background-color: var(--light-yellow);
 }
 
-.filter-subtitle {
+.block-filter-subtitle {
 	font-size: 17px;
 	font-weight: 700;
 	line-height: 30px;
 }
 
-.filter-control {
-	background-color: var(--light-yellow);
-}
-
-.filter-item {
+.block-filter-item {
 	font-size: 15px;
 	line-height: 19px;
 }
 
-.filter-btn {
+.block-filter-btn {
+	color: var(--black);
 	font-family: "PT Sans", "Arial", sans-serif;
+	text-transform: uppercase;
 	font-size: 13px;
 	line-height: 18px;
-	text-transform: uppercase;
 }
 
-.sort-detailed {
-	opacity: 0.3;
+.block-filter-btn-show {
+	background-color: var(--white);
+}
+
+.block-filter-btn-sort {
+	background-color: var(--transparent);
+	border: 0;
 	border-bottom: 1px dotted var(--basic-red);
+	opacity: 0.3;
 }
 
-.sort-price {
-	color: var(--basic-red);
-}
-
-.sort-btn {
+.block-filter-btn-triangle {
 	background-color: var(--basic-greylight);
 }
 
 .pagination a {
 	color: var(--black);
+	text-transform: uppercase;
 	font-size: 13px;
 	line-height: 18px;
+	border: 1px solid var(--black);
 }
 

@@ -25,6 +25,7 @@
 	--grey-opacity: rgba(169, 169, 169, 0.3);
 	--white-active: rgba(255, 255, 255, 0.5);
 	--white-opacity: rgba(255, 255, 255, 0.3);
+	--light-white: rgba(0, 0, 0, 0.0001);
 	--red-shadow-logo: rgba(0, 0, 0, 0.24);
 	--basic-greylight-opacity: rgba(197, 197, 197, 0.3);
 	--dark-red: #ca2c37;
@@ -33,7 +34,6 @@
 	--light-yellow: #f7f3ec;
 	--greyscale: #d7dcde;
 	--transparent: #00000000;
-
 }
 
 *, *::before, ::after {
@@ -71,6 +71,11 @@
 
 a {
 	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 .btn {
@@ -123,14 +128,14 @@ a {
 	background-color: var(--basic-green);
 }
 
-.header-text {
+.page-header-info {
 	color: var(--basic-red);
 	font-style: italic;
 	font-size: 16px;
 	line-height: 23px;
 }
 
-.page-header-phone-number {
+.page-header-phone {
 	color: var(--basic-red);
 	font-weight: 700;
 	font-size: 21px;
@@ -140,6 +145,7 @@ a {
 .page-header-address {
 	color: var(--background-navy-blue);
 	font-size: 14px;
+	font-style: normal;
 }
 
 .main-navigation {
@@ -160,17 +166,18 @@ a {
 	opacity: 0.5;
 }
 
-.header-btn {
+.authorization-btn {
 	color: var(--black);
+	background-color: var(--light-white);
 	font-size: 21px;
 	line-height: 21px;
 }
 
-.header-btn:hover {
+.authorization-btn:hover {
 	color: var(--basic-red);
 }
 
-.header-btn:active {
+.authorization-btn:active {
 	color: var(--basic-greylight);
 }
 
@@ -379,12 +386,12 @@ a {
 	font-style: normal;
 }
 
-.page-footer-navigation-link {
+.page-footer-nav-link {
 	color: var(--white);
 	font-size: 18px;
 }
 
-.page-footer-navigation-product .page-footer-navigation-link {
+.page-footer-link {
 	color: var(--special-yellowlight);
 }
 
@@ -398,20 +405,20 @@ a {
 	line-height: 18px;
 }
 
-.page-footer-social-btn {
+.social-link {
 	color: var(--white); /* На время отсутсвия картинок добавил белый цвет надписям */
 }
 
-.page-footer-bottom-feed {
+.page-footer-feed {
 	font-size: 16px;
 	line-height: 18px;
 }
 
-.page-footer-feed-text {
+.page-footer-feed p {
 	color: var(--white);
 }
 
-.page-footer-feed-link {
+.page-footer-feed a {
 	color: var(--special-yellowlight);
 }
 
@@ -422,16 +429,21 @@ a {
 	background-color: var(--basic-red);
 }
 
-.username {
+.user,
+.user:hover {
 	color: var(--black);
 	font-size: 21px;
 	line-height: 21px;
 }
 
-.login-menu {
+.authorization-item a {
 	color: var(--background-navy-blue);
 	font-size: 16px;
 	line-height: 18px;
+}
+
+.authorization-item a:hover {
+	color: var(--basic-red);
 }
 
 .breadcrumbs li {
@@ -452,7 +464,7 @@ a {
 	text-transform: uppercase;
 }
 
-.block-filter {
+.filters {
 	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
 	font-size: 13px;
@@ -463,11 +475,11 @@ a {
 	background-color: var(--light-yellow);
 }
 
-.block-filter-title {
+.filters-title {
 	background-color: var(--light-yellow);
 }
 
-.block-filter-subtitle {
+.filters-legend {
 	font-size: 17px;
 	font-weight: 700;
 	line-height: 30px;
@@ -478,7 +490,7 @@ a {
 	line-height: 19px;
 }
 
-.block-filter-btn {
+.sorting-btn {
 	color: var(--black);
 	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
@@ -490,14 +502,14 @@ a {
 	background-color: var(--white);
 }
 
-.block-filter-btn-sort {
+.sorting-btn {
 	background-color: var(--transparent);
 	border: 0;
 	border-bottom: 1px dotted var(--basic-red);
 	opacity: 0.3;
 }
 
-.block-filter-btn-triangle {
+.sorting-btn-arrow {
 	background-color: var(--basic-greylight);
 }
 
@@ -509,3 +521,17 @@ a {
 	border: 1px solid var(--black);
 }
 
+.description-product {
+	background-color: var(--basic-background);
+}
+
+.description-product-title {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.description-product-text {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+}

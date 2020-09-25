@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body class="page-body">
 	
 	<header class="page-header">
@@ -17,16 +18,20 @@
   		<a class="logo page-header-logo" href="index.html">
       	<img class="logo-image" src="https://via.placeholder.com/150x100" width="" height="" alt="">
       </a>
+
   		<input class="search" type="search" name="search" value="" placeholder="Поиск">
+
   		<div class="top-menu">
+
         	<a class="top-menu-btn bookmarks" href="">Закладки: 0</a>
       		<a class="top-menu-btn basket" href="">Корзина: 0</a>
       		<a class="top-menu-btn order-registration" href="">Оформить заказ</a>
+
       </div>
 
   	</div>
 
-  		<p class="header-text">
+  		<p class="page-header-info">
 
   			<i>
   				Интернет-магазин<br>
@@ -36,13 +41,28 @@
 
   		</p>
 
-  		<a class="page-header-phone-number" href="tel:+78125550555">+7 (812) 555-05-55</a>
-  		<p class="page-header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+  		<div class="page-header-contacts">
 
-  		<div class="header-authorization">
-	  		<a class="username" href="">Равшан Джамшутович</a>
-	  		<a class="login-menu" href="">Мои заказы</a>
-	  		<a class="login-menu" href="">Личный кабинет</a>
+	  		<a class="page-header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+	  		<address class="page-header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+
+  		</div>
+
+  		<div class="authorization">
+
+	  		<a class="authorization-btn user" href="">Равшан Джамшутович</a>
+	  		
+	  		<ul class="authorization-list">
+	  			
+	  			<li class="authorization-item">
+	  				<a href="">Мои заказы</a>
+	  			</li>
+	  			<li class="authorization-item">
+	  				<a href="">Личный кабинет</a>
+	  			</li>
+
+	  		</ul>
+
 	  	</div>
 
   		<nav class="main-navigation">
@@ -74,57 +94,72 @@
 
   		<section class="main-content">
 
-  			<section class="block-filter"><!--Блок для фильтра-->
+  			<section class="filters"><!--Блок для фильтра-->
 
-	  			<h2 class="block-filter-title">Фильтр:</h2>
+	  			<h2 class="filters-title">Фильтр:</h2>
 
-	  			<div class="block-filter-price">	
+	  			<div class="filters-fieldset">	
 	  			
-		  			<h3 class="block-filter-subtitle">Цена</h3>
+		  			<h3 class="filters-legend">Цена</h3>
 
 		  			<div></div><!--Блок для ползунков стоимости-->
 	  			
 	  			</div>
 	  			
-	  			<div class="block-filter-brands">
+	  			<div class="filters-fieldset">
 
-	  				<h3 class="block-filter-subtitle">Производители:</h3>
-	  				<p class="block-filter-item">Bosch</p>
-	  				<p class="block-filter-item">Интерскол</p>
-	  				<p class="block-filter-item">Makita</p>
-	  				<p class="block-filter-item">Dewalt</p>
-	  				<p class="block-filter-item">Hitachi</p>
+	  				<h3 class="filters-legend">Производители:</h3>
+	  				<p class="filters-item">Bosch</p>
+	  				<p class="filters-item">Интерскол</p>
+	  				<p class="filters-item">Makita</p>
+	  				<p class="filters-item">Dewalt</p>
+	  				<p class="filters-item">Hitachi</p>
 
 	  			</div>	
 
-	  			<div class="block-filter-power">
+	  			<div class="filters-fieldset">
 
-	  				<h3 class="block-filter-subtitle">Питание:</h3>
-	  				<p class="block-filter-item">Аккумуляторные</p>
-	  				<p class="block-filter-item">Сетевые</p>
+	  				<h3 class="filters-legend">Питание:</h3>
+	  				<p class="filters-item">Аккумуляторные</p>
+	  				<p class="filters-item">Сетевые</p>
 
 	  			</div>
 	  			
-	  			<button class="block-filter-btn block-filter-btn-show" type="submit">Показать</button>
+	  			<button class="btn filters-btn" type="submit">Показать</button>
 
   			</section>
   			
-  			<section class="block-filter block-filter-sort"><!--Блок для сортировки-->
+  			<section class="sorting filters"><!--Блок для сортировки-->
 
-  				<h2 class="block-filter-title">Сортировка:</h2>
-  				<button class="block-filter-btn block-filter-btn-sort" type="button">По цене</button>
-  				<button class="block-filter-btn block-filter-btn-sort" type="button">По типу</button>
-  				<button class="block-filter-btn block-filter-btn-sort" type="button">По функционалу</button>
-  				<button class="block-filter-btn-triangle" type="button"></button>
-  				<button class="block-filter-btn-triangle" type="button"></button>
+  				<h2 class="sorting-title filtres-title">Сортировка:</h2>
+
+  				<ul>
+
+	  				<li>
+	  					<button class="sorting-btn" type="button">По цене</button>
+	  				</li>
+	  				<li>
+	  					<button class="sorting-btn" type="button">По типу</button>
+	  				</li>
+	  				<li>
+	  					<button class="sorting-btn" type="button">По функционалу</button>
+	  				</li>
+	  				<li>
+	  					<button class="sorting-btn-arrow up" type="button"></button>
+	  				</li>
+	  				<li>
+	  					<button class="sorting-btn-arrow down" type="button"></button>
+	  				</li>
+
+  				</ul>
 
   			</section>
 
   			<section class="catalog"><!--Блок для карточек товара-->
   			
-  				<ul class="catalog-section-list">
+  				<ul class="catalog-list">
 
-	  				<li class="catalog-section-item">
+	  				<li class="catalog-item">
 	  					<div class="product">
 		  					<a class="product-image-wrapper" href="">
 			  					<img class="product-image" src="https://via.placeholder.com/150x100" width="" height="" alt="">
@@ -140,7 +175,7 @@
 		  				</div>
 	  				</li>
 
-	  				<li class="catalog-section-item">
+	  				<li class="catalog-item">
 	  					<div class="product">
 		  					<a class="product-image-wrapper" href="">
 			  					<img class="product-image" src="https://via.placeholder.com/150x100" width="" height="" alt="">
@@ -156,7 +191,7 @@
 		  				</div>
 	  				</li>
 
-	  				<li class="catalog-section-item">
+	  				<li class="catalog-item">
 	  					<div class="product">
 		  					<a class="product-image-wrapper" href="">
 			  					<img class="product-image" src="https://via.placeholder.com/150x100" width="" height="" alt="">
@@ -172,7 +207,7 @@
 		  				</div>
 	  				</li>
 
-	  				<li class="catalog-section-item">
+	  				<li class="catalog-item">
 	  					<div class="product">
 		  					<a class="product-image-wrapper" href="">
 			  					<img class="product-image" src="https://via.placeholder.com/150x100" width="" height="" alt="">
@@ -188,7 +223,7 @@
 		  				</div>
 	  				</li>
 
-	  				<li class="catalog-section-item">
+	  				<li class="catalog-item">
 	  					<div class="product">
 		  					<a class="product-image-wrapper" href="">
 			  					<img class="product-image" src="https://via.placeholder.com/150x100" width="" height="" alt="">
@@ -204,7 +239,7 @@
 		  				</div>
 	  				</li>
 
-	  				<li class="catalog-section-item">
+	  				<li class="catalog-item">
 	  					<div class="product">
 		  					<a class="product-image-wrapper" href="">
 			  					<img class="product-image" src="https://via.placeholder.com/150x100" width="" height="" alt="">
@@ -219,7 +254,7 @@
 		  				</div>
 	  				</li>
 
-	  				<li class="catalog-section-item">
+	  				<li class="catalog-item">
 	  					<div class="product">
 		  					<a class="product-image-wrapper" href="">
 			  					<img class="product-image" src="https://via.placeholder.com/150x100" width="" height="" alt="">
@@ -235,7 +270,7 @@
 		  				</div>
 	  				</li>
 
-	  				<li class="catalog-section-item">
+	  				<li class="catalog-item">
 	  					<div class="product">
 		  					<a class="product-image-wrapper" href="">
 			  					<img class="product-image" src="https://via.placeholder.com/150x100" width="" height="" alt="">
@@ -251,7 +286,7 @@
 		  				</div>
 	  				</li>
 
-	  				<li class="catalog-section-item">
+	  				<li class="catalog-item">
 	  					<div class="product">
 		  					<a class="product-image-wrapper" href="">
 			  					<img class="product-image" src="https://via.placeholder.com/150x100" width="" height="" alt="">
@@ -287,97 +322,116 @@
 
   		</section>
 
+  		<article class="description-product">
+  			
+  			<h4 class="description-product-title">Пара слов о Перфораторах</h4>
+
+  			<p class="description-product-text">
+  				Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+					Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br> 
+					В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+				</p>
+
+  		</article>
+
   		<footer class="page-footer">
 
-	  		<div class="page-footer-top">
+	  		<section class="page-footer-top">
+
 		  		<a class="logo page-footer-logo">
 	          <img class="logo-image" src="https://via.placeholder.com/150x100" width="" height="" alt="">
 	        </a>
 
 	        <address class="page-footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</address>
 
-		  		<ul class="page-footer-navigation-site">
+		  		<ul class="page-footer-nav">
 
-		  			<li class="page-footer-navigation-item page-footer-navigation-main">
-		  				<a class="page-footer-navigation-link" href="">Компания</a>
+		  			<li class="page-footer-nav-item page-footer-navigation-main">
+		  				<a class="page-footer-nav-link" href="">Компания</a>
 		  			</li>
 
-		  			<li class="page-footer-navigation-item"page->
-		  				<a class="page-footer-navigation-link" href="">Новости</a>
+		  			<li class="page-footer-nav-item"page->
+		  				<a class="page-footer-nav-link" href="">Новости</a>
 		  			</li>
 
-		  			<li class="page-footer-navigation-item"page->
-		  				<a class="page-footer-navigation-link" href="">Каталог</a>
+		  			<li class="page-footer-nav-item"page->
+		  				<a class="page-footer-nav-link" href="">Каталог</a>
 		  			</li>
 
-		  			<li class="page-footer-navigation-item"page->
-		  				<a class="page-footer-navigation-link" href="">Доставка</a>
+		  			<li class="page-footer-nav-item"page->
+		  				<a class="page-footer-nav-link" href="">Доставка</a>
 		  			</li>
 
-		  			<li class="page-footer-navigation-item"page->
-		  				<a class="page-footer-navigation-link" href="">Контакты</a>
+		  			<li class="page-footer-nav-item"page->
+		  				<a class="page-footer-nav-link" href="">Контакты</a>
 		  			</li>
 
 		  		</ul>
 
-		  		<ul class="page-footer-navigation-site page-footer-navigation-product">
+		  		<ul class="page-footer-nav category">
 		  			
-		  			<li class="page-footer-navigation-item"page->
-		  				<a class="page-footer-navigation-link" href="">Материалы</a>
+		  			<li class="page-footer-item"page->
+		  				<a class="page-footer-link" href="">Материалы</a>
 		  			</li>
 
-		  			<li class="page-footer-navigation-item"page->
-		  				<a class="page-footer-navigation-link" href="">Техника</a>
+		  			<li class="page-footer-item"page->
+		  				<a class="page-footer-link" href="">Техника</a>
 		  			</li>
 
-		  			<li class="page-footer-navigation-item"page->
-		  				<a class="page-footer-navigation-link" href="">Инструмент</a>
+		  			<li class="page-footer-item"page->
+		  				<a class="page-footer-link" href="">Инструмент</a>
 		  			</li>
 
-		  			<li class="page-footer-navigation-item"page->
-		  				<a class="page-footer-navigation-link" href="">Спецпредложения</a>
+		  			<li class="page-footer-item"page->
+		  				<a class="page-footer-link" href="">Спецпредложения</a>
 		  			</li>
 
 		  		</ul>
 
-	  		</div>
+	  		</section>
 
-	  		<div class="page-footer-bottom">
+	  		<section class="page-footer-bottom">
 	  		
 	    		<p class="page-footer-copyright">
 	    			&copy; 2010-2019 Компания "Техномарт"
 	    			Все права защищены
 	    		</p>
 
-	        <section class="page-footer-social">
+	        <div class="social">
+
 	          <h2 class="visually-hidden">Ссылки на социальные сети</h2>
-	      		<ul class="page-footer-social-list">
+	      		
+	      		<ul class="social-list">
 	      			
-	      			<li class="page-footer-social-item">
-	              <a class="page-footer-social-btn" href="">Вконтакте</a>
+	      			<li class="social-item">
+	              <a class="social-link" href="">Вконтакте</a>
 	            </li>
-	      			<li class="page-footer-social-item">
-	              <a class="page-footer-social-btn" href="">Фейсбук</a>
+	      			<li class="social-item">
+	              <a class="social-link" href="">Фейсбук</a>
 	            </li> 
-	      			<li class="page-footer-social-item">
-	              <a class="page-footer-social-btn" href="">Инстаграм</a>
+	      			<li class="social-item">
+	              <a class="social-link" href="">Инстаграм</a>
 	            </li>
 
 	      		</ul>
-	        </section>
 
-	        <div class="page-footer-bottom-feed">
+	        </div>
+
+	        <div class="page-footer-feed">
+
 	      		<p class="page-footer-feed-text">
 	      			Обратная связь:
-	      			<a class="page-footer-feed-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+	      			<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 	      		</p>
 
 	      		<p class="page-footer-feed-text">
 	      			Разработано —
-	      			<a class="page-footer-feed-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+	      			<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
 	      		</p>
+
 	        </div>
-	  		</div>
+
+	  		</section>
   		
   		</footer>
 

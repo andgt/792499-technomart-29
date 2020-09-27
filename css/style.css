@@ -19,19 +19,18 @@
 	--neutral-grey: #f3f7f8;
 	--navy-blue: #32425c;
 	--yellow: #ffc047;
-	--dark-grey: rgba(0, 0, 0, 0.25);
-	--pale-yellow: #f9f5f0;
+	--azure: #f2f6f8;
 	--grey: #a9a9a9;
+	--dark-grey: rgba(0, 0, 0, 0.25);
+	--dark-red: #ca2c37;
+	--dark-blue: #293449;
+	--pale-yellow: #f9f5f0;
 	--grey-opacity: rgba(169, 169, 169, 0.3);
 	--white-active: rgba(255, 255, 255, 0.5);
 	--white-opacity: rgba(255, 255, 255, 0.3);
 	--red-shadow-logo: rgba(0, 0, 0, 0.24);
 	--basic-greylight-opacity: rgba(197, 197, 197, 0.3);
-	--dark-red: #ca2c37;
-	--dark-blue: #293449;
 	--font-color: #000000;
-	--azure: #f2f6f8;
-	
 	--greyscale: #d7dcde;
 }
 
@@ -281,6 +280,9 @@ img {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
 }
 
 .product-old-price {
@@ -318,17 +320,13 @@ img {
 	font-size: 13px;
 }
 
-
 .service-list-btn {
 	color: var(--white);
 	background-color: var(--navy-blue);
-	font-weight: 700;
 	font-size: 21px;
 	line-height: 30px;
-	box-shadow: 
-	0px 1px 0px #293449, 
-	inset 0px 1px 0px #405069;
 	cursor: pointer;
+	border: none;
 }
 
 .service-list-btn:hover {
@@ -342,6 +340,7 @@ img {
 
 .service-block-title {
 	color: var(--navy-blue);
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
@@ -540,6 +539,7 @@ img {
 	text-transform: uppercase;
 	font-size: 13px;
 	line-height: 18px;
+	cursor: pointer;
 }
 
 .sorting-btn {
@@ -551,6 +551,7 @@ img {
 
 .sorting-btn-arrow {
 	background-color: var(--basic-greylight);
+	cursor: pointer;
 }
 
 .catalog-list {

@@ -67,6 +67,12 @@
 	padding: 0;
 }
 
+.page-inner {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
 a {
 	text-decoration: none;
 }
@@ -85,7 +91,6 @@ img {
 }
 
 .page-header {
-	display: grid;
 	margin-bottom: 59px;
 }
 
@@ -93,10 +98,9 @@ img {
 	background-color: var(--dark-blue);
 }
 
-.page-header-top-container {
-	width: 960px;
-	margin: 0 auto;
-	padding: 0 10px;
+.header-top-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 .page-header-logo {
@@ -116,7 +120,6 @@ img {
 	background-color: var(--dark-blue);
 	font-family: "Cuprum", "Arial", sans-serif;
 }
-
 
 .search-input::placeholder {
 	color: var(--white);
@@ -151,11 +154,13 @@ img {
 	background-color: var(--neutral-grey);
 }
 
-.page-header-info-container {
+.header-info-grid {
 	display: grid;
-	width: 960px;
-	margin: 0 auto;
-	padding: 0 10px;
+	grid-auto-columns: 1fr;
+}
+
+.page-header-about {
+	grid-row: 1 / 2;
 }
 
 .page-header-text {
@@ -181,6 +186,7 @@ img {
 }
 
 .main-navigation {
+	grid-row: 2 / 3;
 	background-color: var(--navy-blue);
 	box-shadow: inset 0 -5px 0 0 var(--dark-blue);
 }
@@ -229,9 +235,7 @@ img {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 20px;
-	width: 960px;
-	margin: 0 auto 59px;
-	padding: 0 10px;
+	margin: 0 0 59px;
 }
 
 .features-item {
@@ -313,9 +317,7 @@ img {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-gap: 20px;
-	width: 960px;
-	margin: 0 auto 70px;
-	padding: 0 10px;
+	margin: 0 0 70px;
 }
 
 .main-section-header {
@@ -374,9 +376,7 @@ img {
 
 .services-description {
 	display: grid;
-	width: 960px;
 	margin: 64px auto 0;
-	padding: 0 10px;
 }
 
 .services-title {
@@ -442,9 +442,7 @@ img {
 .about-wrapper {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	width: 960px;
 	margin: 0 auto 70px;
-	padding: 0 10px;
 }
 
 .about-company-list {
@@ -493,9 +491,6 @@ img {
 .footer-top-wrapper {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	width: 960px;
-	margin: 0 auto;
-	padding: 0 10px;
 }
 
 .page-footer-logo {
@@ -513,6 +508,12 @@ img {
 
 .page-footer-address {
 	margin: 22px 0 0 0;
+	color: var(--white);
+	font-size: 18px;
+	font-style: normal;
+}
+
+.page-footer-phone {
 	color: var(--white);
 	font-size: 18px;
 	font-style: normal;
@@ -550,9 +551,6 @@ img {
 .footer-bottom-wrapper {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	width: 960px;
-	margin: 0 auto;
-	padding: 0 10px;
 }
 
 .page-footer-copyright {
@@ -614,12 +612,7 @@ img {
 }
 
 .main-content {
-	display: grid;
-	grid-template-columns: 220px 1fr;
-	grid-gap: 20px;
-	width: 960px;
-	margin: 0 auto 59px;
-	padding: 0 10px;
+	margin-bottom: 59px;
 }
 
 .breadcrumbs {
@@ -630,8 +623,10 @@ img {
 }
 
 .breadcrumbs li {
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
+	text-transform: uppercase;
 }
 
 .breadcrumbs a {
@@ -646,6 +641,11 @@ img {
 	font-weight: inherit;
 	line-height: 30px;
 	text-transform: uppercase;
+}
+
+.main-container {
+	display: grid;
+	grid-template-columns: 220px 1fr;
 }
 
 .filter {
@@ -749,9 +749,6 @@ img {
 .description-product-container {
 	display: grid;
 	grid-template-columns: 1fr;
-	width: 960px;
-	margin: 0 auto;
-	padding: 0 10px;
 }
 
 .description-product-title {

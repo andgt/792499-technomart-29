@@ -15,31 +15,28 @@
 
 			<div class="page-header-top">
 
-        <div class="page-inner">
+        <div class="page-inner header-top-wrapper">
+ 
+					<div class="top-search">
 
-          <div class="header-top-wrapper">
+						<a class="logo page-header-logo" href="index.html">
+							<img class="header-logo-image" src="img/logo-technomart.svg" width="108" height="18" alt="Логотип компании">
+						</a>
+						<form class="form-search">
+							<input class="search-input" type="search" name="search" value="" placeholder="Поиск:">
+							<button class="icon-search"></button>
+						</form>
+					</div>
 
-            <div class="top-search">
+					<div class="top-menu">
 
-              <a class="logo page-header-logo" href="">
-                <img class="header-logo-image" src="img/logo-technomart.svg" width="108" height="18" alt="Логотип компании">
-              </a>
+						<a class="top-menu-btn bookmarks" href="">Закладки: 0</a>
+						<a class="top-menu-btn basket catalog-basket" href="">Корзина: 10</a>
+						<a class="top-menu-btn order-registration" href="">Оформить заказ</a>
 
-              <input class="search-input" type="search" name="search" value="" placeholder="Поиск:">
+					</div>
 
-            </div>
-
-            <div class="top-menu">
-
-              <a class="top-menu-btn bookmarks" href="">Закладки: 0</a>
-              <a class="top-menu-btn catalog-basket" href="">Корзина: 0</a>
-              <a class="top-menu-btn order-registration" href="">Оформить заказ</a>
-
-            </div>
-
-          </div>
-
-        </div>
+				</div>
 
       </div>
 
@@ -116,10 +113,10 @@
 
 					<ul class="breadcrumbs">
 				
-		  			<li><a href="index.html">Главная</a></li>
-		  			<li><a href="catalog.html">Каталог</a></li>
-		  			<li><a href="">Инструмент</a></li>
-		  			<li>Перфораторы</li>
+		  			<li class="breadcrumbs-item"><a href="index.html"><span class="visually-hidden">Главная</span></a></li>
+		  			<li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
+		  			<li class="breadcrumbs-item"><a href="">Инструмент</a></li>
+		  			<li class="breadcrumbs-item">Перфораторы</li>
 
 					</ul>
 
@@ -127,49 +124,95 @@
 
 					<div class="main-container">
 
-		  			<section class="filter">
+						<div class="filter">
 
-			  			<h2 class="filter-title">Фильтр:</h2>
+		  				<form method="get" action="https://echo.htmlacademy.ru">
 
-			  			<div class="filter-fieldset">	
-			  			
-				  			<h3 class="filter-legend price">Цена:</h3>
+		  					<h2 class="filter-title">Фильтр:</h2>
 
-				  			<div class="range">
+								<fieldset class="filter-fieldset price-fieldset">
 
-				  				<div class="scale"></div>
+									<legend><h3 class="filter-legend price-title">Цена:</h3></legend>
 
-				  				<div class="price-wrapper">
-					  				<div class="scale-price min-price">0</div>
-					  				<div class="scale-price max-price">30000</div>
-				  				</div>
+									<div class="range-filter">
 
-				  			</div>
-			  			
-			  			</div>
-			  			
-			  			<div class="filter-fieldset filter-vendors">
+										<div class="range-controls">
 
-			  				<h3 class="filter-legend vendors">Производители:</h3>
-			  				<p class="filter-item">Bosch</p>
-			  				<p class="filter-item">Интерскол</p>
-			  				<p class="filter-item">Makita</p>
-			  				<p class="filter-item">Dewalt</p>
-			  				<p class="filter-item">Hitachi</p>
+						  				<div class="scale">
+						  					<div class="bar"></div>
+						  				</div>
 
-			  			</div>	
+						  				<div class="toggle toggle-min"></div>
+		          				<div class="toggle toggle-max"></div>
 
-			  			<div class="filter-fieldset">
+					  				</div>
 
-			  				<h3 class="filter-legend supply">Питание:</h3>
-			  				<p class="filter-item">Аккумуляторные</p>
-			  				<p class="filter-item">Сетевые</p>
+					  				<div class="price-controls">
 
-			  			</div>
-			  			
-			  			<button class="btn filter-btn" type="submit">Показать</button>
+					  					<label class="price-value min-price">
+					  						<input type="number" name="min-price" value="" placeholder="0">
+					  					</label>
 
-		  			</section>
+					  					<label class="price-value max-price">
+					  						<input type="number" name="max-price" value="" placeholder="30000">
+					  					</label>
+
+				  					</div>
+
+				  				</div>	
+
+								</fieldset>
+
+								<fieldset class="filter-fieldset vendors-fieldset">
+
+									<legend><h3 class="filter-legend vendors-title">Производители:</h3></legend>
+									
+									<div class="filter-vendors">
+
+										<input class="filter-input vendors-input" type="checkbox" name="Bosch" id="Bosch">
+										<label class="filter-label" for="Bosch">BOSCH</label>
+
+										<input class="filter-input vendors-input" type="checkbox" name="Interskol" id="Interskol">
+										<label class="filter-label" for="Interskol">Интерскол</label>
+
+										<input class="filter-input vendors-input" type="checkbox" name="Makita" id="Makita">
+										<label class="filter-label" for="Makita">MAKITA</label>
+										
+										<input class="filter-input vendors-input" type="checkbox" name="Dewalt" id="Dewalt">
+										<label class="filter-label" for="Dewalt">DEWALT</label>
+										
+										<input class="filter-input vendors-input" type="checkbox" name="Hitachi" id="Hitachi">
+										<label class="filter-label" for="Hitachi">HITACHI</label>
+
+									</div>
+
+								</fieldset>
+
+								<fieldset class="filter-fieldset supply-fieldset">
+
+									<legend><h3 class="filter-legend supply-title">Питание:</h3></legend>
+
+									<div>
+										
+										<div class="filter-supply">
+
+											<input class="filter-input supply-input" type="radio" name="battery" id="battery">
+											<label class="filter-label" for="battery">Аккумуляторные</label>
+											
+											<input class="filter-input supply-input" type="radio" name="battery" id="mains supply">
+											<label class="filter-label" for="mains supply">Сетевые</label>
+
+										</div>
+
+									</div>
+
+								</fieldset>
+
+								<button class="btn filter-btn" type="submit">Показать</button>
+
+							</form>
+
+						</div>
 
 		  			<section class="catalog">
 
@@ -191,12 +234,24 @@
 				  					<button class="sorting-btn" type="button">По функционалу</button>
 				  				</li>
 
-				  				<li class="sorting-item">
-				  					<button class="sorting-btn-arrow up" type="button"></button>
+				  			</ul>	
+
+				  			<ul class="btn-arrow-list">
+
+				  				<li class="btn-arrow-item">
+				  					<button class="sorting-btn-arrow up" type="button">
+				  						<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.66241 0L11.1624 10L0.162415 10" fill="#C5C5C5"/>
+											</svg>
+				  					</button>
 				  				</li>
 
-				  				<li class="sorting-item">
-				  					<button class="sorting-btn-arrow down" type="button"></button>
+				  				<li class="btn-arrow-item">
+				  					<button class="sorting-btn-arrow down" type="button">
+				  						<svg width="12" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.5 10L0 0H11" fill="#C5C5C5"/>
+											</svg>
+				  					</button>
 				  				</li>
 
 			  				</ul>
@@ -259,6 +314,9 @@
 											<button class="btn-buy" type="button">Купить</button>
 											<button class="btn-bookmarks" type="button">В закладки</button>
 										</div>
+										<a class="product-image-wrapper" href="">
+					  					<img class="product-image" src="img/catalog-product-card-3.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+				            </a>
 				            <div class="product-content">
 						  				<h3 class="product-title">
 					              <a class="product-title-link" href="">
@@ -421,19 +479,19 @@
 		  				<ul class="pagination">
 		  					
 		  					<li class="pagination-item">
-		  						<a href="catalog.html">1</a>
+		  						<a class="pagination-link" href="catalog.html">1</a>
 		  					</li>	
 
 		  					<li class="pagination-item">
-		  						<a href="">2</a>
+		  						<a class="pagination-link" href="blank.html">2</a>
 		  					</li>	
 
 		  					<li class="pagination-item">
-		  						<a href="">3</a>
+		  						<a class="pagination-link" href="blank.html">3</a>
 		  					</li>
 
 		  					<li class="pagination-item">
-		  						<a href="">Следующая</a>
+		  						<a class="pagination-link" href="blank.html">Следующая</a>
 		  					</li>	
 
 		  				</ul>
@@ -481,7 +539,7 @@
 							
 					<div class="footer-top-contacts">
 						
-						<a class="logo page-footer-logo" href="">
+						<a class="logo page-footer-logo" href="index.html">
 							<img class="footer-logo-image" src="img/logo-technomart.svg" width="138" height="23" alt="Логотип компании">
 						</a>
 
@@ -611,6 +669,22 @@
 			</section>
 				
 		</footer>
+
+		<section class="modal">
+
+			<div class="popup-basket">
+
+				<p class="add-product">Товар добавлен в корзину!</p>
+
+				<div class="btn-basket-wrapper">
+					<a class="btn btn-basket btn-checkout" href="">Оформить заказ</a>
+					<a class="btn btn-basket btn-sales" href="catalog.html">Продолжить покупки</a>
+					<button class="btn-close btn-close-basket" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+				</div>
+
+			</div>
+
+		</section>
 
 	</body>
 

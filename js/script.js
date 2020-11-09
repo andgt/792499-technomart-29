@@ -1,5 +1,82 @@
 'use strict';
 
+/* Слайдер сервисы*/
+
+const serviceListBtn = document.querySelectorAll(".service-list-btn");
+const serviceBlockItem = document.querySelectorAll(".service-block-item");
+
+for (var i = 0; i < serviceListBtn.length; i++) {
+	serviceListBtn[0].addEventListener("click", function (evt) {
+		evt.preventDefault();
+		for (let serviceBlock of serviceBlockItem) {
+			serviceBlock.classList.remove("service-show");
+		};
+		serviceBlockItem[0].classList.add("service-show");
+	});
+	serviceListBtn[1].addEventListener("click", function (evt) {
+		evt.preventDefault();
+		for (let serviceBlock of serviceBlockItem) {
+			serviceBlock.classList.remove("service-show");
+		};
+		serviceBlockItem[1].classList.add("service-show");
+	});
+	serviceListBtn[2].addEventListener("click", function (evt) {
+		evt.preventDefault();
+		for (let serviceBlock of serviceBlockItem) {
+			serviceBlock.classList.remove("service-show");
+		};
+		serviceBlockItem[2].classList.add("service-show");
+	});
+};
+
+/* Корзина */
+
+const btnBuy = document.querySelectorAll(".btn-buy");
+const btnBookmarks = document.querySelectorAll(".btn-bookmarks");
+const productBasket = document.querySelector(".product-basket");
+const btnCloseBasket = productBasket.querySelector(".btn-close-basket");
+const bookmarks = document.querySelector(".bookmarks");
+const basket = document.querySelector(".basket");
+let bookmarksCount = 0;
+let basketCount = 0;
+
+basket.textContent = "Корзина: " + basketCount; 
+
+for (var i = 0; i < btnBuy.length; i++) {
+	btnBuy[i].addEventListener("click", function (evt) {
+	evt.preventDefault();
+	productBasket.classList.add("modal-show");
+	basket.classList.add("basket-add");
+	basketCount++;
+	basket.textContent = "Корзина: " + basketCount;
+	});
+};
+
+bookmarks.textContent = "Закладки: " + bookmarksCount; 
+
+for (var i = 0; i < btnBookmarks.length; i++) {
+	btnBookmarks[i].addEventListener("click", function (evt) {
+	evt.preventDefault();
+	bookmarks.classList.add("bookmarks-add");
+	bookmarksCount++;
+	bookmarks.textContent = "Закладки: " + bookmarksCount;
+	});
+};
+
+btnCloseBasket.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	productBasket.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function (evt) {
+	if (evt.keyCode === 27) {
+		if (productBasket.classList.contains("modal-show")) {
+			evt.preventDefault();
+			productBasket.classList.remove("modal-show");
+		}
+	}
+});
+
 /* Слайдер */
 
 const sliderToggleLeft = document.querySelector(".slider-toggle-left");
@@ -10,7 +87,7 @@ const checkboxToggleRight = document.querySelector(".checkbox-toggle-right");
 const checkboxToggleLeft = document.querySelector(".checkbox-toggle-left");
 
 
-if (sliderPerf.style = "display: block") {
+if (sliderPerf) {
 	checkboxToggleLeft.checked=true;
 } else {
 	checkboxToggleRight.checked=true;
@@ -18,54 +95,26 @@ if (sliderPerf.style = "display: block") {
 
 sliderToggleRight.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	sliderPerf.style = "display: none";
-	sliderDrills.style = "display: block";
+	sliderPerf.classList.remove("slider-show");
+	sliderDrills.classList.add("slider-show");
 	checkboxToggleRight.checked=true;
 });
 
 sliderToggleLeft.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	sliderDrills.style = "display: none";
-	sliderPerf.style = "display: block";
+	sliderDrills.classList.remove("slider-show");
+	sliderPerf.classList.add("slider-show");
 	checkboxToggleLeft.checked=true;
 });
 
 checkboxToggleRight.addEventListener("click", function () {
-	sliderPerf.style = "display: none";
-	sliderDrills.style = "display: block";
+	sliderPerf.classList.remove("slider-show");
+	sliderDrills.classList.add("slider-show");
 });
 
 checkboxToggleLeft.addEventListener("click", function () {
-	sliderDrills.style = "display: none";
-	sliderPerf.style = "display: block";	
-});
-
-/* Слайдер сервисы*/
-
-const serviceListBtn = document.querySelectorAll(".service-list-btn");
-const delivery = document.querySelector(".service-block-delivery");
-const guarantee = document.querySelector(".service-block-guarantee");
-const credit = document.querySelector(".service-block-credit");
-
-	serviceListBtn[0].addEventListener("click", function (evt) {
-	evt.preventDefault();
-	delivery.style = "display: block";
-	guarantee.style = "display: none";
-	credit.style = "display: none";
-});
-
-serviceListBtn[1].addEventListener("click", function (evt) {
-	evt.preventDefault();
-	delivery.style = "display: none";
-	guarantee.style = "display: block";
-	credit.style = "display: none";
-});
-
-serviceListBtn[2].addEventListener("click", function (evt) {
-	evt.preventDefault();
-	delivery.style = "display: none";
-	guarantee.style = "display: none";
-	credit.style = "display: block";
+	sliderDrills.classList.remove("slider-show");
+	sliderPerf.classList.add("slider-show");	
 });
 
 /* Форма обратной связи */
@@ -152,54 +201,6 @@ window.addEventListener("keydown", function (evt) {
 			evt.preventDefault();
 			mapPopup.classList.remove("modal-show");
 			mapPopup.classList.remove("modal-error");
-		}
-	}
-});
-
-/* Корзина */
-
-const btnBuy = document.querySelectorAll(".btn-buy");
-const btnBookmarks = document.querySelectorAll(".btn-bookmarks");
-const productBasket = document.querySelector(".product-basket");
-const btnCloseBasket = productBasket.querySelector(".btn-close-basket");
-const bookmarks = document.querySelector(".bookmarks");
-const basket = document.querySelector(".basket");
-let bookmarksCount = 0;
-let basketCount = 0;
-
-basket.textContent = "Корзина: " + basketCount; 
-
-for (var i = 0; i < btnBuy.length; i++) {
-	btnBuy[i].addEventListener("click", function (evt) {
-	evt.preventDefault();
-	productBasket.classList.add("modal-show");
-	basket.classList.add("basket-add");
-	basketCount++;
-	basket.textContent = "Корзина: " + basketCount;
-	});
-};
-
-bookmarks.textContent = "Закладки: " + bookmarksCount; 
-
-for (var i = 0; i < btnBookmarks.length; i++) {
-	btnBookmarks[i].addEventListener("click", function (evt) {
-	evt.preventDefault();
-	bookmarks.classList.add("bookmarks-add");
-	bookmarksCount++;
-	bookmarks.textContent = "Закладки: " + bookmarksCount;
-	});
-};
-
-btnCloseBasket.addEventListener("click", function (evt) {
-	evt.preventDefault();
-	productBasket.classList.remove("modal-show");
-});
-
-window.addEventListener("keydown", function (evt) {
-	if (evt.keyCode === 27) {
-		if (productBasket.classList.contains("modal-show")) {
-			evt.preventDefault();
-			productBasket.classList.remove("modal-show");
 		}
 	}
 });

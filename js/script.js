@@ -6,6 +6,7 @@ const serviceListBtn = document.querySelectorAll(".service-list-btn");
 const serviceBlockItem = document.querySelectorAll(".service-block-item");
 
 for (var i = 0; i < serviceListBtn.length; i++) {
+
 	serviceListBtn[0].addEventListener("click", function (evt) {
 		evt.preventDefault();
 		for (let serviceBlock of serviceBlockItem) {

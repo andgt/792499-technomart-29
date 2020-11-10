@@ -123,6 +123,7 @@ img {
 
 .page-header-logo {
 	display: inline-block;
+	vertical-align: middle;
 	text-align: center;
 	min-width: 220px;
 	background-color: var(--basic-red);
@@ -297,6 +298,7 @@ img {
 
 .page-header-content {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0 0 40px 0;
 }
 
@@ -316,6 +318,7 @@ img {
 }
 
 .page-header-contacts {
+	width: 271px;
 	margin: 0 51px 0 0;
 	padding: 3px 0 0 0;
 }
@@ -363,7 +366,7 @@ img {
 
 .authorization-btn {
 	position: relative;
-	margin: 0;
+	margin: 0 0 auto 0;
 	color: var(--black);
 	background-color: var(--white);
 	font-family: "Cuprum", "Arial", sans-serif;
@@ -374,7 +377,7 @@ img {
 }
 
 .login {
-	margin: 0 10px 0 0;
+	margin: 0 10px auto 0;
 	padding: 12px 27px 12px 45px;
 }
 
@@ -1278,11 +1281,6 @@ img {
 	cursor: pointer;
 }
 
-.contacts-btn-wrapper {
-	margin: 0;
-	padding: 0;
-}
-
 .contacts-btn {
 	display: block;
 	margin: 0;
@@ -1311,6 +1309,7 @@ img {
 
 .page-footer-logo {
 	display: inline-block;
+	vertical-align: middle;
 	text-align: center;
 	width: 220px;
 	height: 63px;

@@ -15,6 +15,7 @@
 						<img class="header-logo-image" src="img/logo-technomart.svg" width="108" height="18" alt="Логотип компании">
 					</a>
 					<form class="form-search" method="post" action="https://echo.htmlacademy.ru">
+						<label class="visually-hidden" for="searchfield">Поле поиска</label>
 						<input class="search-input" type="search" name="search" value="" placeholder="Поиск:">
 						<button class="icon-search" type="button"></button>
 					</form>
@@ -28,7 +29,7 @@
 	          	<p class="page-header-text">
 	          		<i>
 	          			Интернет-магазин
-	          			строительных материалов<br>
+	          			строительных материалов &nbsp;
 	          			и инструментов для ремонта
 	          		</i>
 	          	</p>
@@ -70,7 +71,7 @@
   		<div class="catalog-wrapper">
   			<div class="page-inner">
 					<ul class="breadcrumbs">
-		  			<li class="breadcrumbs-item"><a href="index.html"><span class="visually-hidden">Главная</span></a></li>
+		  			<li class="breadcrumbs-item"><a href="index.html" tabindex="0"><span class="visually-hidden">Главная</span></a></li>
 		  			<li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
 		  			<li class="breadcrumbs-item"><a href="#">Инструмент</a></li>
 		  			<li class="breadcrumbs-item">Перфораторы</li>
@@ -87,14 +88,14 @@
 						  				<div class="scale">
 						  					<div class="bar"></div>
 						  				</div>
-						  				<div class="toggle toggle-min"></div>
-		          				<div class="toggle toggle-max"></div>
+						  				<div class="toggle toggle-min" aria-label="Ползунок для выбора минимальной цены"></div>
+		          				<div class="toggle toggle-max" aria-label="Ползунок для выбора максимальной цены"></div>
 					  				</div>
 					  				<div class="price-controls">
-					  					<label class="price-value min-price" aria-label="Ползунок для выбора минимальной цены">
+					  					<label class="price-value min-price" aria-label="Значение минимальной цены">
 					  						<input type="number" name="min-price" value="" placeholder="0">
 					  					</label>
-					  					<label class="price-value max-price" aria-label="Ползунок для выбора максимальной цены">
+					  					<label class="price-value max-price" aria-label="Значение максимальной цены">
 					  						<input type="number" name="max-price" value="" placeholder="30000">
 					  					</label>
 				  					</div>
@@ -157,14 +158,14 @@
 				  			</ul>	
 				  			<ul class="btn-arrow-list">
 				  				<li class="btn-arrow-item">
-				  					<button class="sorting-btn-arrow up" type="button">
+				  					<button class="sorting-btn-arrow up" type="button" aria-label="Сортировка от большего к меньшему">
 				  						<svg aria-hidden="true" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M5.66241 0L11.1624 10L0.162415 10" fill="#C5C5C5"/>
 											</svg>
 				  					</button>
 				  				</li>
 				  				<li class="btn-arrow-item">
-				  					<button class="sorting-btn-arrow down" type="button">
+				  					<button class="sorting-btn-arrow down" type="button" aria-label="Сортировка от меньшего к большему">
 				  						<svg aria-hidden="true" width="12" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M5.5 10L0 0H11" fill="#C5C5C5"/>
 											</svg>

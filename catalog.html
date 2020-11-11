@@ -11,16 +11,16 @@
 		<header class="catalog-header">
 			<div class="page-header-top">
         <div class="page-inner top-search">
-					<a class="logo page-header-logo" href="index.html">
+					<a class="logo page-header-logo" href="#">
 						<img class="header-logo-image" src="img/logo-technomart.svg" width="108" height="18" alt="Логотип компании">
 					</a>
-					<form class="form-search" method="post" action="https://echo.htmlacademy.ru">
+					<form class="form-search form-search" method="post" action="https://echo.htmlacademy.ru/">
 						<label class="visually-hidden" for="searchfield">Поле поиска</label>
-						<input class="search-input" type="search" name="search" value="" placeholder="Поиск:" id="searchfield">
-						<button class="icon-search" type="button"><span class="visually-hidden">Кнопка поиска</span></button>
+						<input class="search-input" type="search" name="search" value="" id="searchfield" placeholder="Поиск:">
+						<button class="icon-search"><span class="visually-hidden">Кнопка поиска</span></button>
 					</form>
 					<a class="top-menu-btn bookmarks" href="#">Закладки:</a>
-					<a class="top-menu-btn basket " href="#">Корзина:</a>
+					<a class="top-menu-btn basket" href="#">Корзина:</a>
 					<a class="top-menu-btn order-registration" href="#">Оформить заказ</a>
 				</div>
 	      <div class="page-header-info">
@@ -71,7 +71,7 @@
   		<div class="catalog-wrapper">
   			<div class="page-inner">
 					<ul class="breadcrumbs">
-		  			<li class="breadcrumbs-item"><a href="index.html" tabindex="0"><span class="visually-hidden">Главная</span></a></li>
+		  			<li class="breadcrumbs-item"><a href="index.html" tabindex="0"></a></li>
 		  			<li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
 		  			<li class="breadcrumbs-item"><a href="#">Инструмент</a></li>
 		  			<li class="breadcrumbs-item">Перфораторы</li>
@@ -147,33 +147,24 @@
 			  				<h2 class="sorting-title">Сортировка:</h2>
 			  				<ul class="sorting-list">
 				  				<li class="sorting-item">
-				  					<button class="sorting-btn" type="button">По цене</button>
+				  					<a class="sorting-link" href="#">По цене</a>
 				  				</li>
 				  				<li class="sorting-item">
-				  					<button class="sorting-btn" type="button">По типу</button>
+				  					<a class="sorting-link" href="#">По типу</a>
 				  				</li>
 				  				<li class="sorting-item">
-				  					<button class="sorting-btn" type="button">По функционалу</button>
+				  					<a class="sorting-link" href="#">По функционалу</a>
 				  				</li>
 				  			</ul>	
 				  			<ul class="btn-arrow-list">
 				  				<li class="btn-arrow-item">
-				  					<button class="sorting-btn-arrow up" type="button" aria-label="Сортировка от большего к меньшему">
-				  						<svg aria-hidden="true" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M5.66241 0L11.1624 10L0.162415 10" fill="#C5C5C5"/>
-											</svg>
-				  					</button>
+				  					<a class="sorting-btn-arrow up" href="#" aria-label="Сортировка от большего к меньшему"></a>
 				  				</li>
 				  				<li class="btn-arrow-item">
-				  					<button class="sorting-btn-arrow down" type="button" aria-label="Сортировка от меньшего к большему">
-				  						<svg aria-hidden="true" width="12" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M5.5 10L0 0H11" fill="#C5C5C5"/>
-											</svg>
-				  					</button>
+				  					<a class="sorting-btn-arrow down" href="#" aria-label="Сортировка от меньшего к большему"></a>
 				  				</li>
 			  				</ul>
 			  			</header>
-
 		  				<ul class="catalog-list">
 			  				<li class="catalog-item" tabindex="0" aria-label="Карточка товара Перфоратор BOSCH BFG 6000">
 			  					<article class="product-card">
@@ -399,12 +390,12 @@
 		</main>
 		<footer class="page-footer">
 			<section class="page-footer-top">
-				<div class="page-inner footer-top-wrapper">		
-					<div class="footer-top-contacts">
-						<a class="logo page-footer-logo" href="index.html">
+				<div class="page-inner footer-top-wrapper">			
+					<div class="footer-top-contacts">	
+						<a class="logo page-footer-logo" href="#">
 							<img class="footer-logo-image" src="img/logo-technomart.svg" width="138" height="23" alt="Логотип компании">
 						</a>
-						<div class="page-footer-contacts">	
+						<div class="page-footer-contacts">			
 							<address class="page-footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
 							<a class="page-footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
 						</div>
@@ -427,7 +418,7 @@
 								<a class="page-footer-nav-link" href="#">Контакты</a>
 							</li>
 						</ul>
-						<ul class="page-footer-nav category">	
+						<ul class="page-footer-nav category">
 							<li class="page-footer-item">
 								<a class="page-footer-link" href="#">Материалы</a>
 							</li>
@@ -484,7 +475,6 @@
 							Обратная связь:
 							<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 						</p>
-
 						<p>
 							Разработано —
 							<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>

@@ -112,7 +112,7 @@ img {
 .page-header-top {
 	min-height: 42px;
 	margin: 0;
-	padding: 0;	
+	padding: 0;
 	background-color: var(--dark-blue);
 }
 
@@ -181,7 +181,7 @@ img {
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='17px' height='17px' version='1.1' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd'%0AviewBox='0 0 0.34 0.34' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xodm='http://www.corel.com/coreldraw/odm/2003'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C!%5BCDATA%5B .fil0 %7Bfill:%23EE3643%7D %5D%5D%3E%3C/style%3E%3C/defs%3E%3Cg id='Слой_x0020_1'%3E%3Cmetadata id='CorelCorpID_0Corel-Layer'/%3E%3Cpath id='icon-search.svg' class='fil0' d='M0.27 0.24l0.07 0.07 -0.03 0.03 -0.07 -0.07c-0.02,0.02 -0.06,0.03 -0.09,0.03 -0.08,0 -0.15,-0.07 -0.15,-0.15 0,-0.08 0.07,-0.15 0.15,-0.15 0.08,0 0.15,0.07 0.15,0.15 0,0.03 -0.01,0.06 -0.03,0.09zm-0.12 -0.2c-0.06,0 -0.11,0.05 -0.11,0.11 0,0.06 0.05,0.11 0.11,0.11 0.06,0 0.11,-0.05 0.11,-0.11 0,-0.06 -0.05,-0.11 -0.11,-0.11z'/%3E%3C/g%3E%3C/svg%3E");
 	background-repeat: no-repeat;
 	background-color: transparent;
-	opacity: 1;	
+	opacity: 1;
 }
 
 .search-input {
@@ -200,9 +200,9 @@ img {
 
 .search-input::placeholder {
 	color: var(--white);
-	font-size: 18px; 
+	font-size: 18px;
 	opacity: 1;
-} 
+}
 
 .search-input:focus {
 	background-color: var(--white);
@@ -229,7 +229,7 @@ img {
 }
 
 .top-menu-btn:hover::before {
-	opacity: 1;	
+	opacity: 1;
 }
 
 .bookmarks {
@@ -604,7 +604,7 @@ img {
 .slider-toggle-left {
 	left: 24px;
 	background-image: url("data:image/svg+xml,%3Csvg width='22' height='40' viewBox='0 0 22 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.9243 0.941406L21.9225 2.98921L4.90696 20.436L21.978 37.9375L19.9789 39.9853L0.910609 20.436L19.9243 0.941406Z' fill='white'/%3E%3C/svg%3E");
-	
+
 }
 
 .slider-toggle-right {
@@ -672,7 +672,7 @@ img {
 	position: absolute;
 	display: none;
 	width: 620px;
-	height: 104px;	
+	height: 104px;
 }
 
 .slider-show {
@@ -740,7 +740,7 @@ img {
 }
 
 .brands {
-	padding-right: 19px; 
+	padding-right: 19px;
 }
 
 .main-section-title {
@@ -790,7 +790,7 @@ img {
 .main-section-item:focus-within .product-image-btn {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;	
+	justify-content: center;
 }
 
 .label-new::after {
@@ -801,7 +801,7 @@ img {
 	width: 100px;
 	height: 30px;
 	padding: 8px 17px 4px 16px;
-	font-family: "Cuprum", "Arial", sans-serif; 
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
@@ -933,7 +933,7 @@ img {
 	text-align: center;
 }
 
-.product-btn {	
+.product-btn {
 	position: relative;
 	display: block;
 	margin: 0 0 0 15px;
@@ -973,7 +973,7 @@ img {
 	list-style-type: none;
 }
 
-.brand-card {	
+.brand-card {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1105,10 +1105,12 @@ img {
 	background-color: var(--dark-blue);
 }
 
-.service-list-btn:active {
+.service-list-btn:active,
+.service-list-btn:focus {
 	color: var(--navy-blue);
 	background-color: var(--white);
 	border: none;
+  outline: none;
 }
 
 .service-block-item {
@@ -1117,7 +1119,7 @@ img {
 }
 
 .service-block-delivery {
-	display: none; 
+	display: none;
 	background-image: url(../img/service-delivery.svg);
 	background-size: 468px 261px;
 	background-position: 150px 22px;
@@ -1125,7 +1127,7 @@ img {
 }
 
 .service-block-guarantee {
- display: none; 
+ display: none;
 	background-image: url(../img/service-guarantee.svg);
 	background-size: 389px 283px;
 	background-position: 233px 0;
@@ -1133,7 +1135,7 @@ img {
 }
 
 .service-block-credit {
-	display: none; 
+	display: none;
 	background-image: url(../img/service-credit.svg);
 	background-size: 465px 285px;
 	background-position: 155px 3px;
@@ -1141,7 +1143,7 @@ img {
 }
 
 .service-show {
-	display: block; 
+	display: block;
 }
 
 .btn-credit {
@@ -1213,7 +1215,7 @@ img {
 
 .about-company-title {
 	margin: 0 0 24px 0;
-	padding: 0;	
+	padding: 0;
 	color: var(--black);
 	font-size: 30px;
 	font-weight: normal;
@@ -1240,7 +1242,7 @@ img {
 
 .about-company-list {
 	margin: 0 0 18px 0;
-	padding: 2px 0 0 0;	
+	padding: 2px 0 0 0;
 }
 
 .about-company-list-item {
@@ -1405,7 +1407,7 @@ img {
 	list-style-type: none;
 }
 
-.page-footer-item {	
+.page-footer-item {
 	margin: 0;
 	padding: 0;
 	margin-right: 58px;
@@ -1704,7 +1706,7 @@ img {
 }
 
 .authorization-item a {
-	color: var(--navy-blue);	
+	color: var(--navy-blue);
 }
 
 .catalog-wrapper {
@@ -1928,7 +1930,7 @@ img {
 .price-controls {
 	position: relative;
 	display: flex;
-	flex-wrap: wrap;	
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -2051,7 +2053,7 @@ img {
 	margin: 0 10px 0 0;
 	padding: 0;
 	background-image: url("data:image/svg+xml,%3Csvg width='25' height='26' viewBox='0 0 25 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 13.3542C0 6.45125 5.597 0.854248 12.5 0.854248C19.403 0.854248 25 6.45125 25 13.3542C25 20.2572 19.403 25.8542 12.5 25.8542C5.597 25.8542 0 20.2572 0 13.3542ZM21 13.3542C21 8.66725 17.187 4.85425 12.5 4.85425C7.813 4.85425 4 8.66725 4 13.3542C4 18.0412 7.813 21.8542 12.5 21.8542C17.187 21.8542 21 18.0412 21 13.3542Z' fill='%23C5C5C5'/%3E%3C/svg%3E");
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
 	background-position: 0 -1px;
 	cursor: pointer;
 	-moz-appearance: none;
@@ -2183,12 +2185,12 @@ img {
 .sorting-btn-arrow {
 	display: inline-block;
 	vertical-align: middle;
-	position: relative;	
+	position: relative;
 	width: 12px;
 	height: 10px;
 	margin: 0;
 	padding: 0;
-	cursor: pointer; 
+	cursor: pointer;
 }
 
 .btn-arrow-item .up {
@@ -2227,7 +2229,7 @@ img {
 	column-gap: 20px;
 	row-gap: 18px;
 	margin: 0 0 48px 0;
-	padding: 0;	
+	padding: 0;
 	list-style-type: none;
 }
 
@@ -2257,7 +2259,7 @@ img {
 .catalog-item:focus-within .product-image-btn {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;	
+	justify-content: center;
 }
 
 .pagination {
@@ -2279,7 +2281,7 @@ img {
 
 .pagination-item:last-child {
 	width: 140px;
-	margin: 0; 
+	margin: 0;
 }
 
 .pagination-link {
@@ -2311,7 +2313,7 @@ img {
 }
 
 .pagination-item:last-child .pagination-link {
-	padding: 9px 30px 10px 30px; 
+	padding: 9px 30px 10px 30px;
 }
 
 .description-product {
@@ -2506,7 +2508,7 @@ img {
 }
 
 .btn-sales {
-	margin: 0;	
+	margin: 0;
 	font-style: normal;
 	font-weight: normal;
 	color: var(--black);
@@ -2564,4 +2566,4 @@ img {
   80% {
     transform: translateX(10px);
   }
- } 
+ }

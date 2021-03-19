@@ -2,33 +2,36 @@
 
 /* Слайдер сервисы*/
 
-const serviceListBtn = document.querySelectorAll(".service-list-btn");
-const serviceBlockItem = document.querySelectorAll(".service-block-item");
+let tab = function () {
+  let serviceListBtn = document.querySelectorAll(".service-list-btn");
+  let serviceBlockItem = document.querySelectorAll(".service-block-item");
+  let tabName;
 
-for (var i = 0; i < serviceListBtn.length; i++) {
+  serviceListBtn.forEach(element => {
+    element.addEventListener("click", selectTab)
+  });
 
-	serviceListBtn[0].addEventListener("click", function (evt) {
-		evt.preventDefault();
-		for (let serviceBlock of serviceBlockItem) {
-			serviceBlock.classList.remove("service-show");
-		};
-		serviceBlockItem[0].classList.add("service-show");
-	});
-	serviceListBtn[1].addEventListener("click", function (evt) {
-		evt.preventDefault();
-		for (let serviceBlock of serviceBlockItem) {
-			serviceBlock.classList.remove("service-show");
-		};
-		serviceBlockItem[1].classList.add("service-show");
-	});
-	serviceListBtn[2].addEventListener("click", function (evt) {
-		evt.preventDefault();
-		for (let serviceBlock of serviceBlockItem) {
-			serviceBlock.classList.remove("service-show");
-		};
-		serviceBlockItem[2].classList.add("service-show");
-	});
+  function selectTab() {
+    serviceListBtn.forEach(element => {
+      element.classList.remove("service-show");
+    });
+    this.classList.add("service-show");
+    tabName = this.getAttribute("data-tab");
+    selectTabContent(tabName);
+  }
+
+  function selectTabContent(tabName) {
+    serviceBlockItem.forEach(element => {
+      if (element.classList.contains(tabName)) {
+        element.classList.add("service-show");
+      } else {
+        element.classList.remove("service-show");
+      }
+    });
+  };
 };
+
+tab();
 
 /* Корзина */
 
@@ -41,7 +44,7 @@ const basket = document.querySelector(".basket");
 let bookmarksCount = 0;
 let basketCount = 0;
 
-basket.textContent = "Корзина: " + basketCount; 
+basket.textContent = "Корзина: " + basketCount;
 
 for (var i = 0; i < btnBuy.length; i++) {
 	btnBuy[i].addEventListener("click", function (evt) {
@@ -53,7 +56,7 @@ for (var i = 0; i < btnBuy.length; i++) {
 	});
 };
 
-bookmarks.textContent = "Закладки: " + bookmarksCount; 
+bookmarks.textContent = "Закладки: " + bookmarksCount;
 
 for (var i = 0; i < btnBookmarks.length; i++) {
 	btnBookmarks[i].addEventListener("click", function (evt) {
@@ -115,7 +118,7 @@ checkboxToggleRight.addEventListener("click", function () {
 
 checkboxToggleLeft.addEventListener("click", function () {
 	sliderDrills.classList.remove("slider-show");
-	sliderPerf.classList.add("slider-show");	
+	sliderPerf.classList.add("slider-show");
 });
 
 /* Форма обратной связи */

@@ -161,8 +161,8 @@ writeUsClose.addEventListener("click", function (evt) {
 writeUsForm.addEventListener("submit", function (evt) {
 	if (!username.value || !usermail.value) {
 		evt.preventDefault();
-		writeUsWrapper.classList.remove("modal-error");
-		writeUsWrapper.offsetWidth = writeUsWrapper.offsetWidth;
+    writeUsWrapper.classList.remove("modal-error");
+		writeUsWrapper.offsetWidth;
 		writeUsWrapper.classList.add("modal-error");
 	} else {
 		if (isStorageSupport) {
